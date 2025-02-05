@@ -167,6 +167,34 @@ CMakeFiles/something.dir/MainMenuState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/something.dir/MainMenuState.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_engine/MainMenuState.cpp -o CMakeFiles/something.dir/MainMenuState.cpp.s
 
+CMakeFiles/something.dir/GameState.cpp.o: CMakeFiles/something.dir/flags.make
+CMakeFiles/something.dir/GameState.cpp.o: ../GameState.cpp
+CMakeFiles/something.dir/GameState.cpp.o: CMakeFiles/something.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_engine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/something.dir/GameState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/something.dir/GameState.cpp.o -MF CMakeFiles/something.dir/GameState.cpp.o.d -o CMakeFiles/something.dir/GameState.cpp.o -c /home/draker/personal_projects/game_engine/GameState.cpp
+
+CMakeFiles/something.dir/GameState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/something.dir/GameState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_engine/GameState.cpp > CMakeFiles/something.dir/GameState.cpp.i
+
+CMakeFiles/something.dir/GameState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/something.dir/GameState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_engine/GameState.cpp -o CMakeFiles/something.dir/GameState.cpp.s
+
+CMakeFiles/something.dir/PauseMenuState.cpp.o: CMakeFiles/something.dir/flags.make
+CMakeFiles/something.dir/PauseMenuState.cpp.o: ../PauseMenuState.cpp
+CMakeFiles/something.dir/PauseMenuState.cpp.o: CMakeFiles/something.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_engine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/something.dir/PauseMenuState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/something.dir/PauseMenuState.cpp.o -MF CMakeFiles/something.dir/PauseMenuState.cpp.o.d -o CMakeFiles/something.dir/PauseMenuState.cpp.o -c /home/draker/personal_projects/game_engine/PauseMenuState.cpp
+
+CMakeFiles/something.dir/PauseMenuState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/something.dir/PauseMenuState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_engine/PauseMenuState.cpp > CMakeFiles/something.dir/PauseMenuState.cpp.i
+
+CMakeFiles/something.dir/PauseMenuState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/something.dir/PauseMenuState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_engine/PauseMenuState.cpp -o CMakeFiles/something.dir/PauseMenuState.cpp.s
+
 # Object files for target something
 something_OBJECTS = \
 "CMakeFiles/something.dir/main.cpp.o" \
@@ -175,7 +203,9 @@ something_OBJECTS = \
 "CMakeFiles/something.dir/InputManager.cpp.o" \
 "CMakeFiles/something.dir/Game.cpp.o" \
 "CMakeFiles/something.dir/SplashState.cpp.o" \
-"CMakeFiles/something.dir/MainMenuState.cpp.o"
+"CMakeFiles/something.dir/MainMenuState.cpp.o" \
+"CMakeFiles/something.dir/GameState.cpp.o" \
+"CMakeFiles/something.dir/PauseMenuState.cpp.o"
 
 # External object files for target something
 something_EXTERNAL_OBJECTS =
@@ -187,13 +217,15 @@ something: CMakeFiles/something.dir/InputManager.cpp.o
 something: CMakeFiles/something.dir/Game.cpp.o
 something: CMakeFiles/something.dir/SplashState.cpp.o
 something: CMakeFiles/something.dir/MainMenuState.cpp.o
+something: CMakeFiles/something.dir/GameState.cpp.o
+something: CMakeFiles/something.dir/PauseMenuState.cpp.o
 something: CMakeFiles/something.dir/build.make
 something: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 something: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 something: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 something: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 something: CMakeFiles/something.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draker/personal_projects/game_engine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable something"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draker/personal_projects/game_engine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable something"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/something.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy_directory /home/draker/personal_projects/game_engine/Resources /home/draker/personal_projects/game_engine/bin/Resources
 

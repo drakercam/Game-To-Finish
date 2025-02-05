@@ -20,7 +20,7 @@ namespace Draker {
 
         float currentTime = this->clock_.getElapsedTime().asSeconds();
 
-        float accumlator = 0.0f;
+        float accumulator = 0.0f;
 
         while (this->data_->window.isOpen()) {
             this->data_->machine.ProcessStateChanges();
@@ -34,17 +34,17 @@ namespace Draker {
             }
 
             currentTime = newTime;
-            accumlator += frameTime;
+            accumulator += frameTime;
 
-            while (accumlator >= dt) {
+            while (accumulator >= dt) {
                 this->data_->machine.GetActiveState()->HandleInput();
 
                 this->data_->machine.GetActiveState()->Update(dt);
 
-                accumlator -= dt;
+                accumulator -= dt;
             }
 
-            interpolation = accumlator / dt;
+            interpolation = accumulator / dt;
             this->data_->machine.GetActiveState()->Draw(interpolation);
         }
     }

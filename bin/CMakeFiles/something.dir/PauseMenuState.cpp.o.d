@@ -1,5 +1,5 @@
-CMakeFiles/something.dir/MainMenuState.cpp.o: \
- /home/draker/personal_projects/game_engine/MainMenuState.cpp \
+CMakeFiles/something.dir/PauseMenuState.cpp.o: \
+ /home/draker/personal_projects/game_engine/PauseMenuState.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
@@ -148,7 +148,7 @@ CMakeFiles/something.dir/MainMenuState.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/draker/personal_projects/game_engine/MainMenuState.hpp \
+ /home/draker/personal_projects/game_engine/PauseMenuState.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \

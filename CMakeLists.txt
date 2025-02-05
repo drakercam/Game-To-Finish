@@ -17,6 +17,8 @@ set(SOURCES
     Game.cpp
     SplashState.cpp
     MainMenuState.cpp
+    GameState.cpp
+    PauseMenuState.cpp
 )
 
 set(HEADERS
@@ -28,6 +30,8 @@ set(HEADERS
     SETTINGS.hpp
     SplashState.hpp
     MainMenuState.hpp
+    GameState.hpp
+    PauseMenuState.hpp
 )
 
 # Create executable

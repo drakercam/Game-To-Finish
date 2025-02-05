@@ -1,5 +1,6 @@
 #include <sstream>
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include "SETTINGS.hpp"
 
 #include <iostream>
@@ -35,7 +36,7 @@ namespace Draker {
             }
 
             if (this->data_->input.IsSpriteClicked(this->playButton_, sf::Mouse::Left, this->data_->window)) {
-                std::cout << "Go to Game Screen" << std::endl;
+                this->data_->machine.AddState(StateRef(new GameState(data_)), true);
             }
         }
     }

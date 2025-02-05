@@ -177,6 +177,30 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+GameState.o: GameState.cpp.o
+.PHONY : GameState.o
+
+# target to build an object file
+GameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.o
+.PHONY : GameState.cpp.o
+
+GameState.i: GameState.cpp.i
+.PHONY : GameState.i
+
+# target to preprocess a source file
+GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.i
+.PHONY : GameState.cpp.i
+
+GameState.s: GameState.cpp.s
+.PHONY : GameState.s
+
+# target to generate assembly for a file
+GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.s
+.PHONY : GameState.cpp.s
+
 InputManager.o: InputManager.cpp.o
 .PHONY : InputManager.o
 
@@ -224,6 +248,30 @@ MainMenuState.s: MainMenuState.cpp.s
 MainMenuState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/MainMenuState.cpp.s
 .PHONY : MainMenuState.cpp.s
+
+PauseMenuState.o: PauseMenuState.cpp.o
+.PHONY : PauseMenuState.o
+
+# target to build an object file
+PauseMenuState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.o
+.PHONY : PauseMenuState.cpp.o
+
+PauseMenuState.i: PauseMenuState.cpp.i
+.PHONY : PauseMenuState.i
+
+# target to preprocess a source file
+PauseMenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.i
+.PHONY : PauseMenuState.cpp.i
+
+PauseMenuState.s: PauseMenuState.cpp.s
+.PHONY : PauseMenuState.s
+
+# target to generate assembly for a file
+PauseMenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.s
+.PHONY : PauseMenuState.cpp.s
 
 SplashState.o: SplashState.cpp.o
 .PHONY : SplashState.o
@@ -312,12 +360,18 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... GameState.o"
+	@echo "... GameState.i"
+	@echo "... GameState.s"
 	@echo "... InputManager.o"
 	@echo "... InputManager.i"
 	@echo "... InputManager.s"
 	@echo "... MainMenuState.o"
 	@echo "... MainMenuState.i"
 	@echo "... MainMenuState.s"
+	@echo "... PauseMenuState.o"
+	@echo "... PauseMenuState.i"
+	@echo "... PauseMenuState.s"
 	@echo "... SplashState.o"
 	@echo "... SplashState.i"
 	@echo "... SplashState.s"

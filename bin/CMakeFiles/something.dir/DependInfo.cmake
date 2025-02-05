@@ -10,8 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/draker/personal_projects/game_engine/AssetsManager.cpp" "CMakeFiles/something.dir/AssetsManager.cpp.o" "gcc" "CMakeFiles/something.dir/AssetsManager.cpp.o.d"
   "/home/draker/personal_projects/game_engine/Game.cpp" "CMakeFiles/something.dir/Game.cpp.o" "gcc" "CMakeFiles/something.dir/Game.cpp.o.d"
+  "/home/draker/personal_projects/game_engine/GameState.cpp" "CMakeFiles/something.dir/GameState.cpp.o" "gcc" "CMakeFiles/something.dir/GameState.cpp.o.d"
   "/home/draker/personal_projects/game_engine/InputManager.cpp" "CMakeFiles/something.dir/InputManager.cpp.o" "gcc" "CMakeFiles/something.dir/InputManager.cpp.o.d"
   "/home/draker/personal_projects/game_engine/MainMenuState.cpp" "CMakeFiles/something.dir/MainMenuState.cpp.o" "gcc" "CMakeFiles/something.dir/MainMenuState.cpp.o.d"
+  "/home/draker/personal_projects/game_engine/PauseMenuState.cpp" "CMakeFiles/something.dir/PauseMenuState.cpp.o" "gcc" "CMakeFiles/something.dir/PauseMenuState.cpp.o.d"
   "/home/draker/personal_projects/game_engine/SplashState.cpp" "CMakeFiles/something.dir/SplashState.cpp.o" "gcc" "CMakeFiles/something.dir/SplashState.cpp.o.d"
   "/home/draker/personal_projects/game_engine/StateMachine.cpp" "CMakeFiles/something.dir/StateMachine.cpp.o" "gcc" "CMakeFiles/something.dir/StateMachine.cpp.o.d"
   "/home/draker/personal_projects/game_engine/main.cpp" "CMakeFiles/something.dir/main.cpp.o" "gcc" "CMakeFiles/something.dir/main.cpp.o.d"

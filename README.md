@@ -8,6 +8,8 @@ It will allow for me to create many different clones of other games if I so plea
 # Where I left off
 In the video series, I left off on 'Tic-Tac-Toe SFML C++ [STATE CREATION] GameState/Screen'. I will come back to this video to finish up created the game state and the pause state later on. I hope to use this "skeleton code" to fast track any games I make in SFML plus this video series provided me with great insight on state machines and how to handle various states.
 
+Update: Ended up completing the GameState and PauseMenuState on my own. This was a very well explained tutorial and thus allowed me to easily implement these two states with ease.
+
 # SHOUTOUT TO SONAR SYSTEMS ON YOUTUBE WOOOOOOOOOO
 
 # Notes:
