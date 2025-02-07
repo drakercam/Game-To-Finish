@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/draker/personal_projects/game_engine
+CMAKE_SOURCE_DIR = /home/draker/personal_projects/game_to_complete
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/draker/personal_projects/game_engine/bin
+CMAKE_BINARY_DIR = /home/draker/personal_projects/game_to_complete/bin
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/something.dir/all
+all: CMakeFiles/myGame.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/something.dir/clean
+clean: CMakeFiles/myGame.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/something.dir
+# Target rules for target CMakeFiles/myGame.dir
 
 # All Build rule for target.
-CMakeFiles/something.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/draker/personal_projects/game_engine/bin/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target something"
-.PHONY : CMakeFiles/something.dir/all
+CMakeFiles/myGame.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target myGame"
+.PHONY : CMakeFiles/myGame.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/something.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_engine/bin/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/something.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_engine/bin/CMakeFiles 0
-.PHONY : CMakeFiles/something.dir/rule
+CMakeFiles/myGame.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_to_complete/bin/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myGame.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_to_complete/bin/CMakeFiles 0
+.PHONY : CMakeFiles/myGame.dir/rule
 
 # Convenience name for target.
-something: CMakeFiles/something.dir/rule
-.PHONY : something
+myGame: CMakeFiles/myGame.dir/rule
+.PHONY : myGame
 
 # clean rule for target.
-CMakeFiles/something.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/clean
-.PHONY : CMakeFiles/something.dir/clean
+CMakeFiles/myGame.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/clean
+.PHONY : CMakeFiles/myGame.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

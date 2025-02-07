@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/draker/personal_projects/game_engine
+CMAKE_SOURCE_DIR = /home/draker/personal_projects/game_to_complete
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/draker/personal_projects/game_engine/bin
+CMAKE_BINARY_DIR = /home/draker/personal_projects/game_to_complete/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_engine/bin/CMakeFiles /home/draker/personal_projects/game_engine/bin//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_to_complete/bin/CMakeFiles /home/draker/personal_projects/game_to_complete/bin//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_engine/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draker/personal_projects/game_to_complete/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,233 +117,353 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named something
+# Target rules for targets named myGame
 
 # Build rule for target.
-something: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 something
-.PHONY : something
+myGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myGame
+.PHONY : myGame
 
 # fast build rule for target.
-something/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/build
-.PHONY : something/fast
+myGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/build
+.PHONY : myGame/fast
 
-AssetsManager.o: AssetsManager.cpp.o
-.PHONY : AssetsManager.o
-
-# target to build an object file
-AssetsManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/AssetsManager.cpp.o
-.PHONY : AssetsManager.cpp.o
-
-AssetsManager.i: AssetsManager.cpp.i
-.PHONY : AssetsManager.i
-
-# target to preprocess a source file
-AssetsManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/AssetsManager.cpp.i
-.PHONY : AssetsManager.cpp.i
-
-AssetsManager.s: AssetsManager.cpp.s
-.PHONY : AssetsManager.s
-
-# target to generate assembly for a file
-AssetsManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/AssetsManager.cpp.s
-.PHONY : AssetsManager.cpp.s
-
-Game.o: Game.cpp.o
-.PHONY : Game.o
+src/AreaOneState.o: src/AreaOneState.cpp.o
+.PHONY : src/AreaOneState.o
 
 # target to build an object file
-Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+src/AreaOneState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaOneState.cpp.o
+.PHONY : src/AreaOneState.cpp.o
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+src/AreaOneState.i: src/AreaOneState.cpp.i
+.PHONY : src/AreaOneState.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+src/AreaOneState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaOneState.cpp.i
+.PHONY : src/AreaOneState.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+src/AreaOneState.s: src/AreaOneState.cpp.s
+.PHONY : src/AreaOneState.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+src/AreaOneState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaOneState.cpp.s
+.PHONY : src/AreaOneState.cpp.s
 
-GameState.o: GameState.cpp.o
-.PHONY : GameState.o
+src/AreaTwoState.o: src/AreaTwoState.cpp.o
+.PHONY : src/AreaTwoState.o
 
 # target to build an object file
-GameState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.o
-.PHONY : GameState.cpp.o
+src/AreaTwoState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaTwoState.cpp.o
+.PHONY : src/AreaTwoState.cpp.o
 
-GameState.i: GameState.cpp.i
-.PHONY : GameState.i
+src/AreaTwoState.i: src/AreaTwoState.cpp.i
+.PHONY : src/AreaTwoState.i
 
 # target to preprocess a source file
-GameState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.i
-.PHONY : GameState.cpp.i
+src/AreaTwoState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaTwoState.cpp.i
+.PHONY : src/AreaTwoState.cpp.i
 
-GameState.s: GameState.cpp.s
-.PHONY : GameState.s
+src/AreaTwoState.s: src/AreaTwoState.cpp.s
+.PHONY : src/AreaTwoState.s
 
 # target to generate assembly for a file
-GameState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/GameState.cpp.s
-.PHONY : GameState.cpp.s
+src/AreaTwoState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaTwoState.cpp.s
+.PHONY : src/AreaTwoState.cpp.s
 
-InputManager.o: InputManager.cpp.o
-.PHONY : InputManager.o
+src/AssetsManager.o: src/AssetsManager.cpp.o
+.PHONY : src/AssetsManager.o
 
 # target to build an object file
-InputManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/InputManager.cpp.o
-.PHONY : InputManager.cpp.o
+src/AssetsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AssetsManager.cpp.o
+.PHONY : src/AssetsManager.cpp.o
 
-InputManager.i: InputManager.cpp.i
-.PHONY : InputManager.i
+src/AssetsManager.i: src/AssetsManager.cpp.i
+.PHONY : src/AssetsManager.i
 
 # target to preprocess a source file
-InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/InputManager.cpp.i
-.PHONY : InputManager.cpp.i
+src/AssetsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AssetsManager.cpp.i
+.PHONY : src/AssetsManager.cpp.i
 
-InputManager.s: InputManager.cpp.s
-.PHONY : InputManager.s
+src/AssetsManager.s: src/AssetsManager.cpp.s
+.PHONY : src/AssetsManager.s
 
 # target to generate assembly for a file
-InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/InputManager.cpp.s
-.PHONY : InputManager.cpp.s
+src/AssetsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AssetsManager.cpp.s
+.PHONY : src/AssetsManager.cpp.s
 
-MainMenuState.o: MainMenuState.cpp.o
-.PHONY : MainMenuState.o
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
 
 # target to build an object file
-MainMenuState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/MainMenuState.cpp.o
-.PHONY : MainMenuState.cpp.o
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
 
-MainMenuState.i: MainMenuState.cpp.i
-.PHONY : MainMenuState.i
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-MainMenuState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/MainMenuState.cpp.i
-.PHONY : MainMenuState.cpp.i
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-MainMenuState.s: MainMenuState.cpp.s
-.PHONY : MainMenuState.s
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-MainMenuState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/MainMenuState.cpp.s
-.PHONY : MainMenuState.cpp.s
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
-PauseMenuState.o: PauseMenuState.cpp.o
-.PHONY : PauseMenuState.o
+src/GameBorders.o: src/GameBorders.cpp.o
+.PHONY : src/GameBorders.o
 
 # target to build an object file
-PauseMenuState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.o
-.PHONY : PauseMenuState.cpp.o
+src/GameBorders.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameBorders.cpp.o
+.PHONY : src/GameBorders.cpp.o
 
-PauseMenuState.i: PauseMenuState.cpp.i
-.PHONY : PauseMenuState.i
+src/GameBorders.i: src/GameBorders.cpp.i
+.PHONY : src/GameBorders.i
 
 # target to preprocess a source file
-PauseMenuState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.i
-.PHONY : PauseMenuState.cpp.i
+src/GameBorders.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameBorders.cpp.i
+.PHONY : src/GameBorders.cpp.i
 
-PauseMenuState.s: PauseMenuState.cpp.s
-.PHONY : PauseMenuState.s
+src/GameBorders.s: src/GameBorders.cpp.s
+.PHONY : src/GameBorders.s
 
 # target to generate assembly for a file
-PauseMenuState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/PauseMenuState.cpp.s
-.PHONY : PauseMenuState.cpp.s
+src/GameBorders.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameBorders.cpp.s
+.PHONY : src/GameBorders.cpp.s
 
-SplashState.o: SplashState.cpp.o
-.PHONY : SplashState.o
+src/GameState.o: src/GameState.cpp.o
+.PHONY : src/GameState.o
 
 # target to build an object file
-SplashState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/SplashState.cpp.o
-.PHONY : SplashState.cpp.o
+src/GameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameState.cpp.o
+.PHONY : src/GameState.cpp.o
 
-SplashState.i: SplashState.cpp.i
-.PHONY : SplashState.i
+src/GameState.i: src/GameState.cpp.i
+.PHONY : src/GameState.i
 
 # target to preprocess a source file
-SplashState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/SplashState.cpp.i
-.PHONY : SplashState.cpp.i
+src/GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameState.cpp.i
+.PHONY : src/GameState.cpp.i
 
-SplashState.s: SplashState.cpp.s
-.PHONY : SplashState.s
+src/GameState.s: src/GameState.cpp.s
+.PHONY : src/GameState.s
 
 # target to generate assembly for a file
-SplashState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/SplashState.cpp.s
-.PHONY : SplashState.cpp.s
+src/GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameState.cpp.s
+.PHONY : src/GameState.cpp.s
 
-StateMachine.o: StateMachine.cpp.o
-.PHONY : StateMachine.o
+src/InputManager.o: src/InputManager.cpp.o
+.PHONY : src/InputManager.o
 
 # target to build an object file
-StateMachine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/StateMachine.cpp.o
-.PHONY : StateMachine.cpp.o
+src/InputManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/InputManager.cpp.o
+.PHONY : src/InputManager.cpp.o
 
-StateMachine.i: StateMachine.cpp.i
-.PHONY : StateMachine.i
+src/InputManager.i: src/InputManager.cpp.i
+.PHONY : src/InputManager.i
 
 # target to preprocess a source file
-StateMachine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/StateMachine.cpp.i
-.PHONY : StateMachine.cpp.i
+src/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/InputManager.cpp.i
+.PHONY : src/InputManager.cpp.i
 
-StateMachine.s: StateMachine.cpp.s
-.PHONY : StateMachine.s
+src/InputManager.s: src/InputManager.cpp.s
+.PHONY : src/InputManager.s
 
 # target to generate assembly for a file
-StateMachine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/StateMachine.cpp.s
-.PHONY : StateMachine.cpp.s
+src/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/InputManager.cpp.s
+.PHONY : src/InputManager.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/MainMenuState.o: src/MainMenuState.cpp.o
+.PHONY : src/MainMenuState.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/MainMenuState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/MainMenuState.cpp.o
+.PHONY : src/MainMenuState.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/MainMenuState.i: src/MainMenuState.cpp.i
+.PHONY : src/MainMenuState.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/MainMenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/MainMenuState.cpp.i
+.PHONY : src/MainMenuState.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/MainMenuState.s: src/MainMenuState.cpp.s
+.PHONY : src/MainMenuState.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/something.dir/build.make CMakeFiles/something.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/MainMenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/MainMenuState.cpp.s
+.PHONY : src/MainMenuState.cpp.s
+
+src/PauseMenuState.o: src/PauseMenuState.cpp.o
+.PHONY : src/PauseMenuState.o
+
+# target to build an object file
+src/PauseMenuState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PauseMenuState.cpp.o
+.PHONY : src/PauseMenuState.cpp.o
+
+src/PauseMenuState.i: src/PauseMenuState.cpp.i
+.PHONY : src/PauseMenuState.i
+
+# target to preprocess a source file
+src/PauseMenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PauseMenuState.cpp.i
+.PHONY : src/PauseMenuState.cpp.i
+
+src/PauseMenuState.s: src/PauseMenuState.cpp.s
+.PHONY : src/PauseMenuState.s
+
+# target to generate assembly for a file
+src/PauseMenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PauseMenuState.cpp.s
+.PHONY : src/PauseMenuState.cpp.s
+
+src/SplashState.o: src/SplashState.cpp.o
+.PHONY : src/SplashState.o
+
+# target to build an object file
+src/SplashState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/SplashState.cpp.o
+.PHONY : src/SplashState.cpp.o
+
+src/SplashState.i: src/SplashState.cpp.i
+.PHONY : src/SplashState.i
+
+# target to preprocess a source file
+src/SplashState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/SplashState.cpp.i
+.PHONY : src/SplashState.cpp.i
+
+src/SplashState.s: src/SplashState.cpp.s
+.PHONY : src/SplashState.s
+
+# target to generate assembly for a file
+src/SplashState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/SplashState.cpp.s
+.PHONY : src/SplashState.cpp.s
+
+src/StateMachine.o: src/StateMachine.cpp.o
+.PHONY : src/StateMachine.o
+
+# target to build an object file
+src/StateMachine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/StateMachine.cpp.o
+.PHONY : src/StateMachine.cpp.o
+
+src/StateMachine.i: src/StateMachine.cpp.i
+.PHONY : src/StateMachine.i
+
+# target to preprocess a source file
+src/StateMachine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/StateMachine.cpp.i
+.PHONY : src/StateMachine.cpp.i
+
+src/StateMachine.s: src/StateMachine.cpp.s
+.PHONY : src/StateMachine.s
+
+# target to generate assembly for a file
+src/StateMachine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/StateMachine.cpp.s
+.PHONY : src/StateMachine.cpp.s
+
+src/game_object.o: src/game_object.cpp.o
+.PHONY : src/game_object.o
+
+# target to build an object file
+src/game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.o
+.PHONY : src/game_object.cpp.o
+
+src/game_object.i: src/game_object.cpp.i
+.PHONY : src/game_object.i
+
+# target to preprocess a source file
+src/game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.i
+.PHONY : src/game_object.cpp.i
+
+src/game_object.s: src/game_object.cpp.s
+.PHONY : src/game_object.s
+
+# target to generate assembly for a file
+src/game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.s
+.PHONY : src/game_object.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/player_game_object.o: src/player_game_object.cpp.o
+.PHONY : src/player_game_object.o
+
+# target to build an object file
+src/player_game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.o
+.PHONY : src/player_game_object.cpp.o
+
+src/player_game_object.i: src/player_game_object.cpp.i
+.PHONY : src/player_game_object.i
+
+# target to preprocess a source file
+src/player_game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.i
+.PHONY : src/player_game_object.cpp.i
+
+src/player_game_object.s: src/player_game_object.cpp.s
+.PHONY : src/player_game_object.s
+
+# target to generate assembly for a file
+src/player_game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.s
+.PHONY : src/player_game_object.cpp.s
 
 # Help Target
 help:
@@ -353,34 +473,49 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... something"
-	@echo "... AssetsManager.o"
-	@echo "... AssetsManager.i"
-	@echo "... AssetsManager.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... GameState.o"
-	@echo "... GameState.i"
-	@echo "... GameState.s"
-	@echo "... InputManager.o"
-	@echo "... InputManager.i"
-	@echo "... InputManager.s"
-	@echo "... MainMenuState.o"
-	@echo "... MainMenuState.i"
-	@echo "... MainMenuState.s"
-	@echo "... PauseMenuState.o"
-	@echo "... PauseMenuState.i"
-	@echo "... PauseMenuState.s"
-	@echo "... SplashState.o"
-	@echo "... SplashState.i"
-	@echo "... SplashState.s"
-	@echo "... StateMachine.o"
-	@echo "... StateMachine.i"
-	@echo "... StateMachine.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... myGame"
+	@echo "... src/AreaOneState.o"
+	@echo "... src/AreaOneState.i"
+	@echo "... src/AreaOneState.s"
+	@echo "... src/AreaTwoState.o"
+	@echo "... src/AreaTwoState.i"
+	@echo "... src/AreaTwoState.s"
+	@echo "... src/AssetsManager.o"
+	@echo "... src/AssetsManager.i"
+	@echo "... src/AssetsManager.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/GameBorders.o"
+	@echo "... src/GameBorders.i"
+	@echo "... src/GameBorders.s"
+	@echo "... src/GameState.o"
+	@echo "... src/GameState.i"
+	@echo "... src/GameState.s"
+	@echo "... src/InputManager.o"
+	@echo "... src/InputManager.i"
+	@echo "... src/InputManager.s"
+	@echo "... src/MainMenuState.o"
+	@echo "... src/MainMenuState.i"
+	@echo "... src/MainMenuState.s"
+	@echo "... src/PauseMenuState.o"
+	@echo "... src/PauseMenuState.i"
+	@echo "... src/PauseMenuState.s"
+	@echo "... src/SplashState.o"
+	@echo "... src/SplashState.i"
+	@echo "... src/SplashState.s"
+	@echo "... src/StateMachine.o"
+	@echo "... src/StateMachine.i"
+	@echo "... src/StateMachine.s"
+	@echo "... src/game_object.o"
+	@echo "... src/game_object.i"
+	@echo "... src/game_object.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/player_game_object.o"
+	@echo "... src/player_game_object.i"
+	@echo "... src/player_game_object.s"
 .PHONY : help
 
 

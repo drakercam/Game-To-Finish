@@ -1,7 +1,7 @@
-CMakeFiles/something.dir/StateMachine.cpp.o: \
- /home/draker/personal_projects/game_engine/StateMachine.cpp \
+CMakeFiles/myGame.dir/src/StateMachine.cpp.o: \
+ /home/draker/personal_projects/game_to_complete/src/StateMachine.cpp \
  /usr/include/stdc-predef.h \
- /home/draker/personal_projects/game_engine/StateMachine.hpp \
+ /home/draker/personal_projects/game_to_complete/src/StateMachine.hpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -119,4 +119,4 @@ CMakeFiles/something.dir/StateMachine.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/stack \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_stack.h \
- /home/draker/personal_projects/game_engine/State.hpp
+ /home/draker/personal_projects/game_to_complete/src/State.hpp

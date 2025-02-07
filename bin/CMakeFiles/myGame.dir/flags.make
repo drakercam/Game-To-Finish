@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/draker/personal_projects/game_to_complete/src
 
 CXX_FLAGS = -std=gnu++17
 
