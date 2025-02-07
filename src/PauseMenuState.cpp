@@ -1,6 +1,8 @@
 #include <sstream>
 #include "PauseMenuState.hpp"
 #include "GameState.hpp"
+#include "AreaOneState.hpp"
+#include "AreaOneState.hpp"
 #include "SETTINGS.hpp"
 
 #include <iostream>
@@ -22,9 +24,14 @@ namespace Draker {
         this->pausedTitle_.setTexture(this->data_->assets.GetTexture("Pause Menu Title"));
         this->exitButton_.setTexture(this->data_->assets.GetTexture("Exit Button"));
 
+        resumeButton_.setScale(sf::Vector2f(0.25f, 0.25f));
+        exitButton_.setScale(sf::Vector2f(0.25f, 0.25f));
+
         // put button in top right
-        this->resumeButton_.setPosition(sf::Vector2f(600.0f, 0.0f));
-        this->exitButton_.setPosition(sf::Vector2f(0.0f, 0.0f));
+        this->resumeButton_.setPosition(sf::Vector2f(SCREEN_WIDTH - resumeButton_.getGlobalBounds().width, 0.0f));
+        
+        // put button in top left
+        this->exitButton_.setPosition(sf::Vector2f(background_.getOrigin().x, background_.getOrigin().y));
 
         // put title at botton of window
         this->pausedTitle_.setPosition(sf::Vector2f((SCREEN_WIDTH / 2) - (this->pausedTitle_.getGlobalBounds().width / 2), SCREEN_HEIGHT - this->pausedTitle_.getGlobalBounds().height));

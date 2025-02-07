@@ -26,6 +26,5 @@ namespace Draker {
             sf::Sprite pausedTitle_;
 
             sf::Sprite exitButton_;
-
     };  
 }

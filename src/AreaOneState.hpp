@@ -2,13 +2,17 @@
 
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
+#include "player_game_object.hpp"
 #include "Game.hpp"
+#include "GameBorders.hpp"
+#include "GameState.hpp"
 
 namespace Draker {
 
-    class GameState : public State {
+    class AreaOne : public State {
         public:
-            GameState(GameDataRef data);
+            AreaOne(GameDataRef data);
+            ~AreaOne();
 
             void Init();
 
@@ -23,6 +27,14 @@ namespace Draker {
 
             sf::Sprite pauseButton_;
 
+            sf::Sprite playerSprite_;
+
+            PlayerObject* player;
+
             int gameState;
+
+            bool mainArea;
+
+            void DrawTileGrid();
     };  
 }
