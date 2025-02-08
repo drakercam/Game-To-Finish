@@ -26,6 +26,7 @@ namespace Draker {
             void Update(float dt);
             void Draw(float dt);
             void createAreas();
+            void setPauseButtonLoc();
 
         private:
             GameDataRef data_;

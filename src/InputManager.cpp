@@ -4,10 +4,12 @@ namespace Draker {
 
     bool InputManager::IsSpriteClicked(sf::Sprite object, sf::Mouse::Button button, sf::RenderWindow &window) {
         if (sf::Mouse::isButtonPressed(button)) {
-            sf::IntRect tempRect(object.getPosition().x, object.getPosition().y,
-                                 object.getGlobalBounds().width, object.getGlobalBounds().height);
+            // Get the mouse position in window (pixel) coordinates.
+            sf::Vector2i mousePixelPos = sf::Mouse::getPosition(window);
+            // Convert pixel coordinates to world coordinates based on the current view.
+            sf::Vector2f mouseWorldPos = window.mapPixelToCoords(mousePixelPos, window.getView());
 
-            if (tempRect.contains(GetMousePosition(window))) {
+            if (object.getGlobalBounds().contains(mouseWorldPos)) {
                 return true;
             }
         }

@@ -8,7 +8,19 @@ namespace Draker {
     void PlayerObject::Update(float dt) {
         // additional functionality to be added
         Move(dt);
-        
+        updateCamera();
+    }
+
+    void PlayerObject::updateCamera() {
+        sf::Vector2f playerCenter = position_ + sf::Vector2f(sprite_.getGlobalBounds().width / 2.0f, sprite_.getGlobalBounds().height / 2.0f);
+
+        float halfCameraWidth = cameraWidth / 2.0f;
+        float halfCameraHeight = cameraHeight / 2.0f;
+
+        float clampX = std::clamp(playerCenter.x, halfCameraWidth, SCREEN_WIDTH - halfCameraWidth);
+        float clampY = std::clamp(playerCenter.y, halfCameraHeight, SCREEN_HEIGHT - halfCameraHeight);
+
+        playerCamera.setCenter(clampX, clampY);
     }
 
     void PlayerObject::Draw(sf::RenderWindow &window) {
@@ -22,9 +34,9 @@ namespace Draker {
     
         sprite_ = sprite;
         sprite_.setPosition(position_);
-        sprite_.setScale(4.0f, 4.0f);
+        sprite_.setScale(2.0f, 2.0f);
 
-        isColliding_ = false;
+        playerCamera = sf::View(sf::FloatRect(0.0f, 0.0f, cameraWidth, cameraHeight));
     }
     
     void PlayerObject::Move(float dt) {

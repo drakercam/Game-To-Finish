@@ -19,6 +19,8 @@ namespace Draker {
             void HandleInput();
             void Update(float dt);
             void Draw(float dt);
+            void createAreas();
+            void setPauseButtonLoc();
 
         private:
             GameDataRef data_;
@@ -30,11 +32,17 @@ namespace Draker {
             sf::Sprite playerSprite_;
 
             PlayerObject* player;
+            GameBorders* borders;
+
+            sf::RectangleShape mainArea;
+
+            const float verticalWidth = 8.f;
+            const float verticalHeight = 48.f;
+            const float horizontalWidth = 48.f;
+            const float horizontalHeight = 8.f;
 
             int gameState;
-
-            bool mainArea;
-
+            void changeArea();
             void DrawTileGrid();
     };  
 }

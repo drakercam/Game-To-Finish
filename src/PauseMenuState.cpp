@@ -31,7 +31,8 @@ namespace Draker {
 
         // put title at botton of window
         this->pausedTitle_.setPosition(sf::Vector2f((SCREEN_WIDTH / 2) - (this->pausedTitle_.getGlobalBounds().width / 2), SCREEN_HEIGHT - this->pausedTitle_.getGlobalBounds().height));
-                                                   
+
+        this->data_->window.setView(this->data_->window.getDefaultView());
     }
 
     void PauseMenuState::HandleInput() {

@@ -13,6 +13,7 @@ namespace Draker {
 
     AreaThree::~AreaThree() {
         delete player;
+        delete borders;
     }
 
     void AreaThree::Init() {
@@ -24,12 +25,13 @@ namespace Draker {
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
         this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
         this->player = new PlayerObject(playerSprite_);
+        this->borders = new GameBorders();
 
+        createAreas();
 
-        pauseButton_.setScale(sf::Vector2f(0.25f, 0.25f));
+        pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
-        this->pauseButton_.setPosition(sf::Vector2f(SCREEN_WIDTH - pauseButton_.getGlobalBounds().width, 0.0f));
-                                                   
+        setPauseButtonLoc();        
     }
 
     void AreaThree::HandleInput() {
@@ -49,10 +51,12 @@ namespace Draker {
     void AreaThree::Update(float dt) {
         // implement an updates needed
         player->Update(dt);
+        this->data_->window.setView(player->getCamera());
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)) {
-            this->data_->machine.AddState(StateRef(new GameState(data_)), true);
-        }
+        setPauseButtonLoc();
+
+        borders->checkBorders(player);
+        changeArea();
     }
 
     void AreaThree::Draw(float dt) {
@@ -60,6 +64,9 @@ namespace Draker {
         
         this->data_->window.draw(this->background_);
         DrawTileGrid();
+
+        this->data_->window.draw(mainArea);
+
         this->data_->window.draw(this->pauseButton_);
         this->player->Draw(this->data_->window);
 
@@ -82,5 +89,48 @@ namespace Draker {
         }
 
         this->data_->window.draw(grid);
+    }
+
+    void AreaThree::setPauseButtonLoc() {
+        // Define a margin from the edge.
+        const float margin = 10.0f;
+        
+        // Calculate the top left of the view.
+        float viewLeft = player->getCamera().getCenter().x - (player->getCamera().getSize().x / 2);
+        float viewTop = player->getCamera().getCenter().y - (player->getCamera().getSize().y / 2);
+        
+        // Calculate the top right of the view.
+        float viewRight = viewLeft + player->getCamera().getSize().x;
+        
+        // Update the pause button's position:
+        // Place it at the top right with a margin, offset by its width.
+        pauseButton_.setPosition(
+            viewRight - pauseButton_.getGlobalBounds().width - margin,
+            viewTop + margin
+        );
+    }
+
+    void AreaThree::changeArea() {
+        sf::FloatRect playerBounds = player->getSprite().getGlobalBounds();
+
+        sf::FloatRect mainAreaRect = mainArea.getGlobalBounds();
+
+        if (playerBounds.intersects(mainAreaRect)) {
+            std::cout << "Moving back to Main Area" << std::endl;
+            this->data_->machine.AddState(StateRef(new GameState(data_)), true);
+        }
+    }
+
+    void AreaThree::createAreas() {
+        // Calculate positions:
+        // For vertical borders: center vertically.
+        float verticalY = (SCREEN_HEIGHT / 2.f) - (verticalHeight / 2.f);
+        // For horizontal borders: center horizontally.
+        float horizontalX = (SCREEN_WIDTH / 2.f) - (horizontalWidth / 2.f);
+
+        // create exit to main area proportional to where you entered
+        mainArea = sf::RectangleShape((sf::Vector2f(verticalWidth, verticalHeight)));
+        mainArea.setPosition(0.f, verticalY);
+        mainArea.setFillColor(sf::Color::Green);
     }
 }

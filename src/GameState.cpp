@@ -28,10 +28,9 @@ namespace Draker {
         // setup different area entry points
         createAreas();
 
-        pauseButton_.setScale(sf::Vector2f(0.25f, 0.25f));
+        pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
-        this->pauseButton_.setPosition(sf::Vector2f(SCREEN_WIDTH - pauseButton_.getGlobalBounds().width, 0.0f));
-                                                   
+        setPauseButtonLoc();                                                   
     }
 
     void GameState::HandleInput() {
@@ -51,9 +50,11 @@ namespace Draker {
     void GameState::Update(float dt) {
         // implement an updates needed
         player->Update(dt);
-        
+        this->data_->window.setView(player->getCamera());
+
+        setPauseButtonLoc();
+
         borders->checkBorders(player);
-        
         changeArea();
     }
 
@@ -90,6 +91,25 @@ namespace Draker {
         }
 
         this->data_->window.draw(grid);
+    }
+
+    void GameState::setPauseButtonLoc() {
+        // Define a margin from the edge.
+        const float margin = 10.0f;
+        
+        // Calculate the top left of the view.
+        float viewLeft = player->getCamera().getCenter().x - (player->getCamera().getSize().x / 2);
+        float viewTop = player->getCamera().getCenter().y - (player->getCamera().getSize().y / 2);
+        
+        // Calculate the top right of the view.
+        float viewRight = viewLeft + player->getCamera().getSize().x;
+        
+        // Update the pause button's position:
+        // Place it at the top right with a margin, offset by its width.
+        pauseButton_.setPosition(
+            viewRight - pauseButton_.getGlobalBounds().width - margin,
+            viewTop + margin
+        );
     }
 
     void GameState::changeArea() {
