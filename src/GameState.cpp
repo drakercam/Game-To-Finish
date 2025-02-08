@@ -22,7 +22,11 @@ namespace Draker {
         this->background_.setTexture(this->data_->assets.GetTexture("Game State Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
         this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
-        this->player = new PlayerObject(playerSprite_);
+
+        float playerPosX = SCREEN_WIDTH / 2.0f;
+        float playerPosY = SCREEN_HEIGHT / 2.0f;
+
+        this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
         this->borders = new GameBorders();
 
         // setup different area entry points
@@ -30,7 +34,7 @@ namespace Draker {
 
         pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
-        setPauseButtonLoc();                                                   
+        setPauseButtonLoc();
     }
 
     void GameState::HandleInput() {

@@ -1,8 +1,8 @@
 #include "PlayerObject.hpp"
 
 namespace Draker {
-    PlayerObject::PlayerObject(sf::Sprite sprite) : GameObject(sprite) { 
-        Init(sprite);
+    PlayerObject::PlayerObject(sf::Sprite sprite, float x, float y) : GameObject(sprite, x, y) {
+        Init(sprite, x, y);
     }
     
     void PlayerObject::Update(float dt) {
@@ -28,13 +28,13 @@ namespace Draker {
         window.display();
     }
     
-    void PlayerObject::Init(sf::Sprite sprite) {
-        position_ = sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_WIDTH / 2);
+    void PlayerObject::Init(sf::Sprite sprite, float x, float y) {
         velocity_ = sf::Vector2f(0.0f, 0.0f);
-    
         sprite_ = sprite;
-        sprite_.setPosition(position_);
         sprite_.setScale(2.0f, 2.0f);
+
+        position_ = sf::Vector2f(x, y);
+        sprite_.setPosition(position_);
 
         playerCamera = sf::View(sf::FloatRect(0.0f, 0.0f, cameraWidth, cameraHeight));
     }

@@ -14,14 +14,14 @@ namespace Draker {
             sf::Vector2f velocity_;
 
             void Move(float dt);
-            void Init(sf::Sprite sprite) override;
+            void Init(sf::Sprite sprite, float x, float y) override;
             void updateCamera();
             sf::View playerCamera;
             const float cameraWidth = 320.0f;
             const float cameraHeight = 240.0f;
     
         public:
-            PlayerObject(sf::Sprite sprite);
+            PlayerObject(sf::Sprite sprite, float x, float y);
             void Update(float dt) override;
             void Draw(sf::RenderWindow &window) override;
             sf::Sprite getSprite() const { return sprite_; }

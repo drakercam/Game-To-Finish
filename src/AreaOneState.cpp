@@ -22,14 +22,20 @@ namespace Draker {
         this->background_.setTexture(this->data_->assets.GetTexture("Area One Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
         this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
-        this->player = new PlayerObject(playerSprite_);
-        this->borders = new GameBorders();
 
+        std::cout << "Ended here 1" << std::endl;
         createAreas();
+        std::cout << "Ended here 2" << std::endl;
+
+        float playerPosX = mainArea.getPosition().x - 2.0f * (playerSprite_.getGlobalBounds().width);
+        float playerPosY = mainArea.getPosition().y + 24.0f;
+
+        this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
+        this->borders = new GameBorders();
 
         pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
-        setPauseButtonLoc();        
+        setPauseButtonLoc();
     }
 
     void AreaOne::HandleInput() {

@@ -24,10 +24,14 @@ namespace Draker {
         this->background_.setTexture(this->data_->assets.GetTexture("Area Three Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
         this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
-        this->player = new PlayerObject(playerSprite_);
-        this->borders = new GameBorders();
 
         createAreas();
+
+        float playerPosX = mainArea.getPosition().x + (playerSprite_.getGlobalBounds().width);
+        float playerPosY = mainArea.getPosition().y + 24.0f;
+
+        this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
+        this->borders = new GameBorders();
 
         pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 

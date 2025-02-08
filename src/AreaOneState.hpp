@@ -21,8 +21,6 @@ namespace Draker {
             void HandleInput();
             void Update(float dt);
             void Draw(float dt);
-            void createAreas();
-            void setPauseButtonLoc();
 
         private:
             GameDataRef data_;
@@ -46,5 +44,7 @@ namespace Draker {
             int gameState;
             void changeArea();
             void DrawTileGrid();
+            void createAreas();
+            void setPauseButtonLoc();
     };  
 }
