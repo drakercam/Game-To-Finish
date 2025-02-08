@@ -45,7 +45,7 @@ namespace Draker {
 
             if (this->data_->input.IsSpriteClicked(this->resumeButton_, sf::Mouse::Left, this->data_->window)) {
                 std::cout << "Go back to Game" << std::endl;
-                this->data_->machine.AddState(StateRef(new GameState(data_)), true);
+                this->data_->machine.RemoveState();
             }
 
             if (this->data_->input.IsSpriteClicked(this->exitButton_, sf::Mouse::Left, this->data_->window)) {
