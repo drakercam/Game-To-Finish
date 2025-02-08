@@ -1,5 +1,5 @@
-CMakeFiles/myGame.dir/src/MainMenuState.cpp.o: \
- /home/draker/personal_projects/game_to_complete/src/MainMenuState.cpp \
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.o: \
+ /home/draker/personal_projects/game_to_complete/src/AreaFourState.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
@@ -148,7 +148,7 @@ CMakeFiles/myGame.dir/src/MainMenuState.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/draker/personal_projects/game_to_complete/src/MainMenuState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaFourState.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -244,6 +244,9 @@ CMakeFiles/myGame.dir/src/MainMenuState.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/draker/personal_projects/game_to_complete/src/State.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /home/draker/personal_projects/game_to_complete/src/Game.hpp \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -263,10 +266,6 @@ CMakeFiles/myGame.dir/src/MainMenuState.cpp.o: \
  /usr/include/c++/11/bits/stl_stack.h \
  /home/draker/personal_projects/game_to_complete/src/AssetsManager.hpp \
  /home/draker/personal_projects/game_to_complete/src/InputManager.hpp \
- /home/draker/personal_projects/game_to_complete/src/GameState.hpp \
- /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
- /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
- /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -291,8 +290,8 @@ CMakeFiles/myGame.dir/src/MainMenuState.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iostream \
  /home/draker/personal_projects/game_to_complete/src/GameBorders.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameState.hpp \
  /home/draker/personal_projects/game_to_complete/src/PauseMenuState.hpp \
  /home/draker/personal_projects/game_to_complete/src/AreaOneState.hpp \
  /home/draker/personal_projects/game_to_complete/src/AreaTwoState.hpp \
- /home/draker/personal_projects/game_to_complete/src/AreaThreeState.hpp \
- /home/draker/personal_projects/game_to_complete/src/AreaFourState.hpp
+ /home/draker/personal_projects/game_to_complete/src/AreaThreeState.hpp

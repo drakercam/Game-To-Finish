@@ -1,9 +1,5 @@
 #include <sstream>
 #include "PauseMenuState.hpp"
-#include "GameState.hpp"
-#include "AreaOneState.hpp"
-#include "AreaOneState.hpp"
-#include "SETTINGS.hpp"
 
 #include <iostream>
 

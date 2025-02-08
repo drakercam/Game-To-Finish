@@ -1,14 +1,16 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "player_game_object.hpp"
+#include <algorithm>
+#include "PlayerObject.hpp"
+#include "SETTINGS.hpp"
 
 namespace Draker {
     class GameBorders {
         public:
             GameBorders();
 
-            void checkArea(PlayerObject *player, bool &area1, bool &area2);
+            void checkBorders(PlayerObject* player);
 
             sf::FloatRect getLeftBorder() const   { return leftBorder; }
             sf::FloatRect getRightBorder() const  { return rightBorder; }

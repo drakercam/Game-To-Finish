@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
-#include "player_game_object.hpp"
+#include "PlayerObject.hpp"
 #include "Game.hpp"
 #include "GameBorders.hpp"
 #include "GameState.hpp"

@@ -5,32 +5,17 @@ namespace Draker {
         Init();
     }
 
-    void GameBorders::checkArea(PlayerObject *player, bool &area1, bool &area2) {
+    void GameBorders::checkBorders(PlayerObject* player) {
+        sf::Vector2f playerPosition = player->getPosition();
         sf::FloatRect playerBounds = player->getSprite().getGlobalBounds();
 
-        if (playerBounds.intersects(leftBorder)) {
-            area1 = true;
-            std::cout << "Collided with left border" << std::endl;
-        }
+        float min_X = 0.0f;
+        float max_X = SCREEN_WIDTH - playerBounds.width;
+        float min_Y = 0.0f;
+        float max_Y = SCREEN_HEIGHT - playerBounds.height;
 
-        else if (playerBounds.intersects(rightBorder)) {
-            area2 = true;
-            std::cout << "Collided with right border" << std::endl;
-        }
-
-        else if (playerBounds.intersects(topBorder)) {
-            // tbi
-            std::cout << "Collided with top border" << std::endl;
-        }
-
-        else if (playerBounds.intersects(bottomBorder)) {
-            //tbi
-            std::cout << "Collided with bottom border" << std::endl;
-        }
-        else {
-            area1 = false;
-            area2 = false;
-        }
+        player->setPosition(sf::Vector2f(std::clamp(playerPosition.x, min_X, max_X),
+                                         std::clamp(playerPosition.y, min_Y, max_Y - 8.0f)));
     }
 
     void GameBorders::Init() {

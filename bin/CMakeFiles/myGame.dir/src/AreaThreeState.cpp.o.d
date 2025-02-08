@@ -1,12 +1,7 @@
-CMakeFiles/myGame.dir/src/game_object.cpp.o: \
- /home/draker/personal_projects/game_to_complete/src/game_object.cpp \
- /usr/include/stdc-predef.h \
- /home/draker/personal_projects/game_to_complete/src/game_object.hpp \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
- /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
- /usr/include/c++/11/ostream /usr/include/c++/11/ios \
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: \
+ /home/draker/personal_projects/game_to_complete/src/AreaThreeState.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -149,8 +144,15 @@ CMakeFiles/myGame.dir/src/game_object.cpp.o: \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
  /usr/include/c++/11/bits/ostream.tcc \
+ /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/draker/personal_projects/game_to_complete/src/AreaTwoState.hpp \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
  /usr/include/SFML/System/FileInputStream.hpp \
  /usr/include/SFML/System/InputStream.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
@@ -241,6 +243,9 @@ CMakeFiles/myGame.dir/src/game_object.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/draker/personal_projects/game_to_complete/src/State.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
  /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /home/draker/personal_projects/game_to_complete/src/Game.hpp \
  /usr/include/c++/11/memory \
@@ -259,7 +264,6 @@ CMakeFiles/myGame.dir/src/game_object.cpp.o: \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_stack.h \
- /home/draker/personal_projects/game_to_complete/src/State.hpp \
  /home/draker/personal_projects/game_to_complete/src/AssetsManager.hpp \
  /home/draker/personal_projects/game_to_complete/src/InputManager.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
@@ -285,4 +289,9 @@ CMakeFiles/myGame.dir/src/game_object.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iostream \
- /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc
+ /home/draker/personal_projects/game_to_complete/src/GameBorders.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PauseMenuState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaOneState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaThreeState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaFourState.hpp

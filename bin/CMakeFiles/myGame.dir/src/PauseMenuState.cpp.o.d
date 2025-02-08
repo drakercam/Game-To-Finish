@@ -264,8 +264,8 @@ CMakeFiles/myGame.dir/src/PauseMenuState.cpp.o: \
  /home/draker/personal_projects/game_to_complete/src/AssetsManager.hpp \
  /home/draker/personal_projects/game_to_complete/src/InputManager.hpp \
  /home/draker/personal_projects/game_to_complete/src/GameState.hpp \
- /home/draker/personal_projects/game_to_complete/src/player_game_object.hpp \
- /home/draker/personal_projects/game_to_complete/src/game_object.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
  /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -291,4 +291,7 @@ CMakeFiles/myGame.dir/src/PauseMenuState.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iostream \
  /home/draker/personal_projects/game_to_complete/src/GameBorders.hpp \
- /home/draker/personal_projects/game_to_complete/src/AreaOneState.hpp
+ /home/draker/personal_projects/game_to_complete/src/AreaOneState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaTwoState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaThreeState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaFourState.hpp

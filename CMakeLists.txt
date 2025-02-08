@@ -19,10 +19,12 @@ set(SOURCES
     src/MainMenuState.cpp
     src/GameState.cpp
     src/PauseMenuState.cpp
-    src/game_object.cpp
-    src/player_game_object.cpp
+    src/GameObject.cpp
+    src/PlayerObject.cpp
     src/AreaOneState.cpp
     src/AreaTwoState.cpp
+    src/AreaThreeState.cpp
+    src/AreaFourState.cpp
     src/GameBorders.cpp
 )
 
@@ -37,10 +39,12 @@ set(HEADERS
     src/MainMenuState.hpp
     src/GameState.hpp
     src/PauseMenuState.hpp
-    src/game_object.hpp
-    src/player_game_object.hpp
+    src/GameObject.hpp
+    src/PlayerObject.hpp
     src/AreaOneState.hpp
     src/AreaTwoState.hpp
+    src/AreaThreeState.hpp
+    src/AreaFourState.hpp
     src/GameBorders.hpp
 )
 

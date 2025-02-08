@@ -244,8 +244,8 @@ CMakeFiles/myGame.dir/src/GameState.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/draker/personal_projects/game_to_complete/src/State.hpp \
- /home/draker/personal_projects/game_to_complete/src/player_game_object.hpp \
- /home/draker/personal_projects/game_to_complete/src/game_object.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
  /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /home/draker/personal_projects/game_to_complete/src/Game.hpp \
  /usr/include/c++/11/memory \
@@ -292,4 +292,6 @@ CMakeFiles/myGame.dir/src/GameState.cpp.o: \
  /home/draker/personal_projects/game_to_complete/src/GameBorders.hpp \
  /home/draker/personal_projects/game_to_complete/src/PauseMenuState.hpp \
  /home/draker/personal_projects/game_to_complete/src/AreaOneState.hpp \
- /home/draker/personal_projects/game_to_complete/src/AreaTwoState.hpp
+ /home/draker/personal_projects/game_to_complete/src/AreaTwoState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaThreeState.hpp \
+ /home/draker/personal_projects/game_to_complete/src/AreaFourState.hpp

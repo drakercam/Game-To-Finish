@@ -1,9 +1,5 @@
 #include <sstream>
 #include "GameState.hpp"
-#include "PauseMenuState.hpp"
-#include "AreaOneState.hpp"
-#include "AreaTwoState.hpp"
-#include "SETTINGS.hpp"
 
 #include <iostream>
 
@@ -15,6 +11,7 @@ namespace Draker {
 
     GameState::~GameState() {
         delete player;
+        delete borders;
     }
 
     void GameState::Init() {
@@ -28,8 +25,8 @@ namespace Draker {
         this->player = new PlayerObject(playerSprite_);
         this->borders = new GameBorders();
 
-        areaOne = false;
-        areaTwo = false;
+        // setup different area entry points
+        createAreas();
 
         pauseButton_.setScale(sf::Vector2f(0.25f, 0.25f));
 
@@ -55,19 +52,9 @@ namespace Draker {
         // implement an updates needed
         player->Update(dt);
         
-        borders->checkArea(player, areaOne, areaTwo);
-
-        if (areaOne) {
-            std::cout << "Going to area one" << std::endl;
-            std::cout << "value of areaOne " << areaOne << std::endl;
-            this->data_->machine.AddState(StateRef(new AreaOne(data_)), true);
-        }
+        borders->checkBorders(player);
         
-        if (areaTwo) {
-            std::cout << "Going to area one" << std::endl;
-            std::cout << "value of areaTwo " << areaTwo << std::endl;
-            this->data_->machine.AddState(StateRef(new AreaTwo(data_)), true);
-        }
+        changeArea();
     }
 
     void GameState::Draw(float dt) {
@@ -75,6 +62,12 @@ namespace Draker {
         
         this->data_->window.draw(this->background_);
         DrawTileGrid();
+
+        this->data_->window.draw(areaOne);
+        this->data_->window.draw(areaTwo);
+        this->data_->window.draw(areaThree);
+        this->data_->window.draw(areaFour);
+
         this->data_->window.draw(this->pauseButton_);
         this->player->Draw(this->data_->window);
 
@@ -97,5 +90,59 @@ namespace Draker {
         }
 
         this->data_->window.draw(grid);
+    }
+
+    void GameState::changeArea() {
+        sf::FloatRect playerBounds = player->getSprite().getGlobalBounds();
+
+        sf::FloatRect areaOneRect = areaOne.getGlobalBounds();
+        sf::FloatRect areaTwoRect = areaTwo.getGlobalBounds();
+        sf::FloatRect areaThreeRect = areaThree.getGlobalBounds();
+        sf::FloatRect areaFourRect = areaFour.getGlobalBounds();
+
+        if (playerBounds.intersects(areaOneRect)) {
+            std::cout << "Moving to areaOne" << std::endl;
+            this->data_->machine.AddState(StateRef(new AreaOne(data_)), true);
+        }
+        else if (playerBounds.intersects(areaTwoRect)) {
+            std::cout << "Moving to areaTwo" << std::endl;
+            this->data_->machine.AddState(StateRef(new AreaTwo(data_)), true);
+        }
+        else if (playerBounds.intersects(areaThreeRect)) {
+            std::cout << "Moving to areaThree" << std::endl;
+            this->data_->machine.AddState(StateRef(new AreaThree(data_)), true);
+        }
+        else if (playerBounds.intersects(areaFourRect)) {
+            std::cout << "Moving to areaFour" << std::endl;
+            this->data_->machine.AddState(StateRef(new AreaFour(data_)), true);
+        }
+    }
+
+    void GameState::createAreas() {
+        // Calculate positions:
+        // For vertical borders: center vertically.
+        float verticalY = (SCREEN_HEIGHT / 2.f) - (verticalHeight / 2.f);
+        // For horizontal borders: center horizontally.
+        float horizontalX = (SCREEN_WIDTH / 2.f) - (horizontalWidth / 2.f);
+
+        // Create the left border: 8 x 48, flush with left side.
+        areaOne = sf::RectangleShape((sf::Vector2f(verticalWidth, verticalHeight)));
+        areaOne.setPosition(0.f, verticalY);
+        areaOne.setFillColor(sf::Color::Cyan);
+
+        // Create the right border: 8 x 48, flush with right side.
+        areaThree = sf::RectangleShape((sf::Vector2f(verticalWidth, verticalHeight)));
+        areaThree.setPosition(SCREEN_WIDTH - verticalWidth, verticalY);
+        areaThree.setFillColor(sf::Color::Red);
+
+        // Create the top border: 48 x 8, flush with top side.
+        areaTwo = sf::RectangleShape((sf::Vector2f(horizontalWidth, horizontalHeight)));
+        areaTwo.setPosition(horizontalX, 0.f);
+        areaTwo.setFillColor(sf::Color::Blue);
+
+        // Create the bottom border: 48 x 8, flush with bottom side.
+        areaFour = sf::RectangleShape((sf::Vector2f(horizontalWidth, horizontalHeight)));
+        areaFour.setPosition(horizontalX, SCREEN_HEIGHT - horizontalHeight);
+        areaFour.setFillColor(sf::Color::Yellow);
     }
 }

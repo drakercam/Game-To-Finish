@@ -241,8 +241,8 @@ CMakeFiles/myGame.dir/src/GameBorders.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/draker/personal_projects/game_to_complete/src/player_game_object.hpp \
- /home/draker/personal_projects/game_to_complete/src/game_object.hpp \
+ /home/draker/personal_projects/game_to_complete/src/PlayerObject.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
  /home/draker/personal_projects/game_to_complete/src/SETTINGS.hpp \
  /home/draker/personal_projects/game_to_complete/src/Game.hpp \
  /usr/include/c++/11/memory \

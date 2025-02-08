@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "Game.hpp"
+#include "SETTINGS.hpp"
+#include "MainMenuState.hpp"
 
 namespace Draker {
 

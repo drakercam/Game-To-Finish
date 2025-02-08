@@ -1,8 +1,7 @@
-CMakeFiles/myGame.dir/src/player_game_object.cpp.o: \
- /home/draker/personal_projects/game_to_complete/src/player_game_object.cpp \
+CMakeFiles/myGame.dir/src/GameObject.cpp.o: \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.cpp \
  /usr/include/stdc-predef.h \
- /home/draker/personal_projects/game_to_complete/src/player_game_object.hpp \
- /home/draker/personal_projects/game_to_complete/src/game_object.hpp \
+ /home/draker/personal_projects/game_to_complete/src/GameObject.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \

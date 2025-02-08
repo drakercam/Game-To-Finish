@@ -2,8 +2,14 @@
 
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
-#include "player_game_object.hpp"
+#include "PlayerObject.hpp"
 #include "GameBorders.hpp"
+#include "PauseMenuState.hpp"
+#include "AreaOneState.hpp"
+#include "AreaTwoState.hpp"
+#include "AreaThreeState.hpp"
+#include "AreaFourState.hpp"
+#include "SETTINGS.hpp"
 #include "Game.hpp"
 #include <vector>
 
@@ -19,6 +25,7 @@ namespace Draker {
             void HandleInput();
             void Update(float dt);
             void Draw(float dt);
+            void createAreas();
 
         private:
             GameDataRef data_;
@@ -29,12 +36,18 @@ namespace Draker {
             PlayerObject* player;
             GameBorders* borders;
 
+            sf::RectangleShape areaOne;
+            sf::RectangleShape areaTwo;
+            sf::RectangleShape areaThree;
+            sf::RectangleShape areaFour;
+
+            const float verticalWidth = 8.f;
+            const float verticalHeight = 48.f;
+            const float horizontalWidth = 48.f;
+            const float horizontalHeight = 8.f;
+            
             int gameState;
-            bool areaOne;
-            bool areaTwo;
-
-            void DrawTileGrid();
-
             void changeArea();
+            void DrawTileGrid();
     };  
 }

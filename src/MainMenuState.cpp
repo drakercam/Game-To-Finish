@@ -1,7 +1,5 @@
 #include <sstream>
 #include "MainMenuState.hpp"
-#include "GameState.hpp"
-#include "SETTINGS.hpp"
 
 #include <iostream>
 

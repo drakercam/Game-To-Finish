@@ -195,33 +195,33 @@ CMakeFiles/myGame.dir/src/PauseMenuState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/PauseMenuState.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/PauseMenuState.cpp -o CMakeFiles/myGame.dir/src/PauseMenuState.cpp.s
 
-CMakeFiles/myGame.dir/src/game_object.cpp.o: CMakeFiles/myGame.dir/flags.make
-CMakeFiles/myGame.dir/src/game_object.cpp.o: ../src/game_object.cpp
-CMakeFiles/myGame.dir/src/game_object.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/myGame.dir/src/game_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/game_object.cpp.o -MF CMakeFiles/myGame.dir/src/game_object.cpp.o.d -o CMakeFiles/myGame.dir/src/game_object.cpp.o -c /home/draker/personal_projects/game_to_complete/src/game_object.cpp
+CMakeFiles/myGame.dir/src/GameObject.cpp.o: CMakeFiles/myGame.dir/flags.make
+CMakeFiles/myGame.dir/src/GameObject.cpp.o: ../src/GameObject.cpp
+CMakeFiles/myGame.dir/src/GameObject.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/myGame.dir/src/GameObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/GameObject.cpp.o -MF CMakeFiles/myGame.dir/src/GameObject.cpp.o.d -o CMakeFiles/myGame.dir/src/GameObject.cpp.o -c /home/draker/personal_projects/game_to_complete/src/GameObject.cpp
 
-CMakeFiles/myGame.dir/src/game_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/game_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/game_object.cpp > CMakeFiles/myGame.dir/src/game_object.cpp.i
+CMakeFiles/myGame.dir/src/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/GameObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/GameObject.cpp > CMakeFiles/myGame.dir/src/GameObject.cpp.i
 
-CMakeFiles/myGame.dir/src/game_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/game_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/game_object.cpp -o CMakeFiles/myGame.dir/src/game_object.cpp.s
+CMakeFiles/myGame.dir/src/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/GameObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/GameObject.cpp -o CMakeFiles/myGame.dir/src/GameObject.cpp.s
 
-CMakeFiles/myGame.dir/src/player_game_object.cpp.o: CMakeFiles/myGame.dir/flags.make
-CMakeFiles/myGame.dir/src/player_game_object.cpp.o: ../src/player_game_object.cpp
-CMakeFiles/myGame.dir/src/player_game_object.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/myGame.dir/src/player_game_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/player_game_object.cpp.o -MF CMakeFiles/myGame.dir/src/player_game_object.cpp.o.d -o CMakeFiles/myGame.dir/src/player_game_object.cpp.o -c /home/draker/personal_projects/game_to_complete/src/player_game_object.cpp
+CMakeFiles/myGame.dir/src/PlayerObject.cpp.o: CMakeFiles/myGame.dir/flags.make
+CMakeFiles/myGame.dir/src/PlayerObject.cpp.o: ../src/PlayerObject.cpp
+CMakeFiles/myGame.dir/src/PlayerObject.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/myGame.dir/src/PlayerObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/PlayerObject.cpp.o -MF CMakeFiles/myGame.dir/src/PlayerObject.cpp.o.d -o CMakeFiles/myGame.dir/src/PlayerObject.cpp.o -c /home/draker/personal_projects/game_to_complete/src/PlayerObject.cpp
 
-CMakeFiles/myGame.dir/src/player_game_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/player_game_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/player_game_object.cpp > CMakeFiles/myGame.dir/src/player_game_object.cpp.i
+CMakeFiles/myGame.dir/src/PlayerObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/PlayerObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/PlayerObject.cpp > CMakeFiles/myGame.dir/src/PlayerObject.cpp.i
 
-CMakeFiles/myGame.dir/src/player_game_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/player_game_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/player_game_object.cpp -o CMakeFiles/myGame.dir/src/player_game_object.cpp.s
+CMakeFiles/myGame.dir/src/PlayerObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/PlayerObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/PlayerObject.cpp -o CMakeFiles/myGame.dir/src/PlayerObject.cpp.s
 
 CMakeFiles/myGame.dir/src/AreaOneState.cpp.o: CMakeFiles/myGame.dir/flags.make
 CMakeFiles/myGame.dir/src/AreaOneState.cpp.o: ../src/AreaOneState.cpp
@@ -251,10 +251,38 @@ CMakeFiles/myGame.dir/src/AreaTwoState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/AreaTwoState.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/AreaTwoState.cpp -o CMakeFiles/myGame.dir/src/AreaTwoState.cpp.s
 
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: CMakeFiles/myGame.dir/flags.make
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: ../src/AreaThreeState.cpp
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o -MF CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o.d -o CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o -c /home/draker/personal_projects/game_to_complete/src/AreaThreeState.cpp
+
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/AreaThreeState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/AreaThreeState.cpp > CMakeFiles/myGame.dir/src/AreaThreeState.cpp.i
+
+CMakeFiles/myGame.dir/src/AreaThreeState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/AreaThreeState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/AreaThreeState.cpp -o CMakeFiles/myGame.dir/src/AreaThreeState.cpp.s
+
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.o: CMakeFiles/myGame.dir/flags.make
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.o: ../src/AreaFourState.cpp
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/myGame.dir/src/AreaFourState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/AreaFourState.cpp.o -MF CMakeFiles/myGame.dir/src/AreaFourState.cpp.o.d -o CMakeFiles/myGame.dir/src/AreaFourState.cpp.o -c /home/draker/personal_projects/game_to_complete/src/AreaFourState.cpp
+
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myGame.dir/src/AreaFourState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draker/personal_projects/game_to_complete/src/AreaFourState.cpp > CMakeFiles/myGame.dir/src/AreaFourState.cpp.i
+
+CMakeFiles/myGame.dir/src/AreaFourState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myGame.dir/src/AreaFourState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draker/personal_projects/game_to_complete/src/AreaFourState.cpp -o CMakeFiles/myGame.dir/src/AreaFourState.cpp.s
+
 CMakeFiles/myGame.dir/src/GameBorders.cpp.o: CMakeFiles/myGame.dir/flags.make
 CMakeFiles/myGame.dir/src/GameBorders.cpp.o: ../src/GameBorders.cpp
 CMakeFiles/myGame.dir/src/GameBorders.cpp.o: CMakeFiles/myGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/myGame.dir/src/GameBorders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/myGame.dir/src/GameBorders.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myGame.dir/src/GameBorders.cpp.o -MF CMakeFiles/myGame.dir/src/GameBorders.cpp.o.d -o CMakeFiles/myGame.dir/src/GameBorders.cpp.o -c /home/draker/personal_projects/game_to_complete/src/GameBorders.cpp
 
 CMakeFiles/myGame.dir/src/GameBorders.cpp.i: cmake_force
@@ -276,10 +304,12 @@ myGame_OBJECTS = \
 "CMakeFiles/myGame.dir/src/MainMenuState.cpp.o" \
 "CMakeFiles/myGame.dir/src/GameState.cpp.o" \
 "CMakeFiles/myGame.dir/src/PauseMenuState.cpp.o" \
-"CMakeFiles/myGame.dir/src/game_object.cpp.o" \
-"CMakeFiles/myGame.dir/src/player_game_object.cpp.o" \
+"CMakeFiles/myGame.dir/src/GameObject.cpp.o" \
+"CMakeFiles/myGame.dir/src/PlayerObject.cpp.o" \
 "CMakeFiles/myGame.dir/src/AreaOneState.cpp.o" \
 "CMakeFiles/myGame.dir/src/AreaTwoState.cpp.o" \
+"CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o" \
+"CMakeFiles/myGame.dir/src/AreaFourState.cpp.o" \
 "CMakeFiles/myGame.dir/src/GameBorders.cpp.o"
 
 # External object files for target myGame
@@ -294,10 +324,12 @@ myGame: CMakeFiles/myGame.dir/src/SplashState.cpp.o
 myGame: CMakeFiles/myGame.dir/src/MainMenuState.cpp.o
 myGame: CMakeFiles/myGame.dir/src/GameState.cpp.o
 myGame: CMakeFiles/myGame.dir/src/PauseMenuState.cpp.o
-myGame: CMakeFiles/myGame.dir/src/game_object.cpp.o
-myGame: CMakeFiles/myGame.dir/src/player_game_object.cpp.o
+myGame: CMakeFiles/myGame.dir/src/GameObject.cpp.o
+myGame: CMakeFiles/myGame.dir/src/PlayerObject.cpp.o
 myGame: CMakeFiles/myGame.dir/src/AreaOneState.cpp.o
 myGame: CMakeFiles/myGame.dir/src/AreaTwoState.cpp.o
+myGame: CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o
+myGame: CMakeFiles/myGame.dir/src/AreaFourState.cpp.o
 myGame: CMakeFiles/myGame.dir/src/GameBorders.cpp.o
 myGame: CMakeFiles/myGame.dir/build.make
 myGame: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
@@ -305,7 +337,7 @@ myGame: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 myGame: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 myGame: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 myGame: CMakeFiles/myGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable myGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draker/personal_projects/game_to_complete/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable myGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myGame.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy_directory /home/draker/personal_projects/game_to_complete/Resources /home/draker/personal_projects/game_to_complete/bin/Resources
 

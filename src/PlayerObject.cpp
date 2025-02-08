@@ -1,4 +1,4 @@
-#include "player_game_object.hpp"
+#include "PlayerObject.hpp"
 
 namespace Draker {
     PlayerObject::PlayerObject(sf::Sprite sprite) : GameObject(sprite) { 
@@ -8,8 +8,9 @@ namespace Draker {
     void PlayerObject::Update(float dt) {
         // additional functionality to be added
         Move(dt);
+        
     }
-    
+
     void PlayerObject::Draw(sf::RenderWindow &window) {
         window.draw(sprite_);
         window.display();
@@ -22,9 +23,8 @@ namespace Draker {
         sprite_ = sprite;
         sprite_.setPosition(position_);
         sprite_.setScale(4.0f, 4.0f);
-    }
-    
-    void PlayerObject::Collide() {
+
+        isColliding_ = false;
     }
     
     void PlayerObject::Move(float dt) {

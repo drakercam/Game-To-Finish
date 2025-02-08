@@ -1,10 +1,6 @@
 #include "SplashState.hpp"
 #include <sstream>
-
 #include <iostream>
-
-#include "SETTINGS.hpp"
-#include "MainMenuState.hpp"
 
 namespace Draker {
 

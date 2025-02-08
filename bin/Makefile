@@ -129,6 +129,30 @@ myGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/build
 .PHONY : myGame/fast
 
+src/AreaFourState.o: src/AreaFourState.cpp.o
+.PHONY : src/AreaFourState.o
+
+# target to build an object file
+src/AreaFourState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaFourState.cpp.o
+.PHONY : src/AreaFourState.cpp.o
+
+src/AreaFourState.i: src/AreaFourState.cpp.i
+.PHONY : src/AreaFourState.i
+
+# target to preprocess a source file
+src/AreaFourState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaFourState.cpp.i
+.PHONY : src/AreaFourState.cpp.i
+
+src/AreaFourState.s: src/AreaFourState.cpp.s
+.PHONY : src/AreaFourState.s
+
+# target to generate assembly for a file
+src/AreaFourState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaFourState.cpp.s
+.PHONY : src/AreaFourState.cpp.s
+
 src/AreaOneState.o: src/AreaOneState.cpp.o
 .PHONY : src/AreaOneState.o
 
@@ -152,6 +176,30 @@ src/AreaOneState.s: src/AreaOneState.cpp.s
 src/AreaOneState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaOneState.cpp.s
 .PHONY : src/AreaOneState.cpp.s
+
+src/AreaThreeState.o: src/AreaThreeState.cpp.o
+.PHONY : src/AreaThreeState.o
+
+# target to build an object file
+src/AreaThreeState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o
+.PHONY : src/AreaThreeState.cpp.o
+
+src/AreaThreeState.i: src/AreaThreeState.cpp.i
+.PHONY : src/AreaThreeState.i
+
+# target to preprocess a source file
+src/AreaThreeState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaThreeState.cpp.i
+.PHONY : src/AreaThreeState.cpp.i
+
+src/AreaThreeState.s: src/AreaThreeState.cpp.s
+.PHONY : src/AreaThreeState.s
+
+# target to generate assembly for a file
+src/AreaThreeState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/AreaThreeState.cpp.s
+.PHONY : src/AreaThreeState.cpp.s
 
 src/AreaTwoState.o: src/AreaTwoState.cpp.o
 .PHONY : src/AreaTwoState.o
@@ -249,6 +297,30 @@ src/GameBorders.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameBorders.cpp.s
 .PHONY : src/GameBorders.cpp.s
 
+src/GameObject.o: src/GameObject.cpp.o
+.PHONY : src/GameObject.o
+
+# target to build an object file
+src/GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
+
+src/GameObject.i: src/GameObject.cpp.i
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
+
 src/GameState.o: src/GameState.cpp.o
 .PHONY : src/GameState.o
 
@@ -345,6 +417,30 @@ src/PauseMenuState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PauseMenuState.cpp.s
 .PHONY : src/PauseMenuState.cpp.s
 
+src/PlayerObject.o: src/PlayerObject.cpp.o
+.PHONY : src/PlayerObject.o
+
+# target to build an object file
+src/PlayerObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PlayerObject.cpp.o
+.PHONY : src/PlayerObject.cpp.o
+
+src/PlayerObject.i: src/PlayerObject.cpp.i
+.PHONY : src/PlayerObject.i
+
+# target to preprocess a source file
+src/PlayerObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PlayerObject.cpp.i
+.PHONY : src/PlayerObject.cpp.i
+
+src/PlayerObject.s: src/PlayerObject.cpp.s
+.PHONY : src/PlayerObject.s
+
+# target to generate assembly for a file
+src/PlayerObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/PlayerObject.cpp.s
+.PHONY : src/PlayerObject.cpp.s
+
 src/SplashState.o: src/SplashState.cpp.o
 .PHONY : src/SplashState.o
 
@@ -393,30 +489,6 @@ src/StateMachine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/StateMachine.cpp.s
 .PHONY : src/StateMachine.cpp.s
 
-src/game_object.o: src/game_object.cpp.o
-.PHONY : src/game_object.o
-
-# target to build an object file
-src/game_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.o
-.PHONY : src/game_object.cpp.o
-
-src/game_object.i: src/game_object.cpp.i
-.PHONY : src/game_object.i
-
-# target to preprocess a source file
-src/game_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.i
-.PHONY : src/game_object.cpp.i
-
-src/game_object.s: src/game_object.cpp.s
-.PHONY : src/game_object.s
-
-# target to generate assembly for a file
-src/game_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/game_object.cpp.s
-.PHONY : src/game_object.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -441,30 +513,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/player_game_object.o: src/player_game_object.cpp.o
-.PHONY : src/player_game_object.o
-
-# target to build an object file
-src/player_game_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.o
-.PHONY : src/player_game_object.cpp.o
-
-src/player_game_object.i: src/player_game_object.cpp.i
-.PHONY : src/player_game_object.i
-
-# target to preprocess a source file
-src/player_game_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.i
-.PHONY : src/player_game_object.cpp.i
-
-src/player_game_object.s: src/player_game_object.cpp.s
-.PHONY : src/player_game_object.s
-
-# target to generate assembly for a file
-src/player_game_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myGame.dir/build.make CMakeFiles/myGame.dir/src/player_game_object.cpp.s
-.PHONY : src/player_game_object.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -474,9 +522,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myGame"
+	@echo "... src/AreaFourState.o"
+	@echo "... src/AreaFourState.i"
+	@echo "... src/AreaFourState.s"
 	@echo "... src/AreaOneState.o"
 	@echo "... src/AreaOneState.i"
 	@echo "... src/AreaOneState.s"
+	@echo "... src/AreaThreeState.o"
+	@echo "... src/AreaThreeState.i"
+	@echo "... src/AreaThreeState.s"
 	@echo "... src/AreaTwoState.o"
 	@echo "... src/AreaTwoState.i"
 	@echo "... src/AreaTwoState.s"
@@ -489,6 +543,9 @@ help:
 	@echo "... src/GameBorders.o"
 	@echo "... src/GameBorders.i"
 	@echo "... src/GameBorders.s"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
 	@echo "... src/GameState.o"
 	@echo "... src/GameState.i"
 	@echo "... src/GameState.s"
@@ -501,21 +558,18 @@ help:
 	@echo "... src/PauseMenuState.o"
 	@echo "... src/PauseMenuState.i"
 	@echo "... src/PauseMenuState.s"
+	@echo "... src/PlayerObject.o"
+	@echo "... src/PlayerObject.i"
+	@echo "... src/PlayerObject.s"
 	@echo "... src/SplashState.o"
 	@echo "... src/SplashState.i"
 	@echo "... src/SplashState.s"
 	@echo "... src/StateMachine.o"
 	@echo "... src/StateMachine.i"
 	@echo "... src/StateMachine.s"
-	@echo "... src/game_object.o"
-	@echo "... src/game_object.i"
-	@echo "... src/game_object.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/player_game_object.o"
-	@echo "... src/player_game_object.i"
-	@echo "... src/player_game_object.s"
 .PHONY : help
 
 
