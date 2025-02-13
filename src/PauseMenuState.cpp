@@ -20,8 +20,8 @@ namespace Draker {
         this->pausedTitle_.setTexture(this->data_->assets.GetTexture("Pause Menu Title"));
         this->exitButton_.setTexture(this->data_->assets.GetTexture("Exit Button"));
 
-        resumeButton_.setScale(sf::Vector2f(0.25f, 0.25f));
-        exitButton_.setScale(sf::Vector2f(0.25f, 0.25f));
+        resumeButton_.setScale(sf::Vector2f(0.33f, 0.33f));
+        exitButton_.setScale(sf::Vector2f(0.33f, 0.33f));
 
         // put button in top right
         this->resumeButton_.setPosition(sf::Vector2f(SCREEN_WIDTH - resumeButton_.getGlobalBounds().width, 0.0f));

@@ -25,8 +25,8 @@ namespace Draker {
             void updateCamera();
             void updateAnimation();
             sf::View playerCamera;
-            const float cameraWidth = 160.0f;
-            const float cameraHeight = 120.0f;
+            const float cameraWidth = 220.0f;
+            const float cameraHeight = 180.0f;
 
             // Animation frame control
             float frameDuration_ = 0.15f;
