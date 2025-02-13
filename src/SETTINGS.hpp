@@ -25,6 +25,7 @@
 #define AREA_FOUR_BACKGROUND "Resources/AREA_FOUR_BACKGROUND.png"
 
 #define PLAYER_SPRITE "Resources/PLAYER.png"
+#define PLAYER_SPRITE_SHEET "Resources/PLAYER_SPRITE_SHEET.png"
 
 #define STATE_PLAYING 98
 #define STATE_PAUSED 97

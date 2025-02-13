@@ -17,17 +17,15 @@ namespace Draker {
     void AreaOne::Init() {
         this->data_->assets.LoadTexture("Area One Background", AREA_ONE_BACKGROUND);
         this->data_->assets.LoadTexture("Pause Button", PAUSE_BUTTON);
-        this->data_->assets.LoadTexture("Player Sprite", PLAYER_SPRITE);
+        this->data_->assets.LoadTexture("Player Sprite Sheet", PLAYER_SPRITE_SHEET);
 
         this->background_.setTexture(this->data_->assets.GetTexture("Area One Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
-        this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
+        this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite Sheet"));
 
-        std::cout << "Ended here 1" << std::endl;
         createAreas();
-        std::cout << "Ended here 2" << std::endl;
 
-        float playerPosX = mainArea.getPosition().x - 2.0f * (playerSprite_.getGlobalBounds().width);
+        float playerPosX = mainArea.getPosition().x - (playerSprite_.getGlobalBounds().width / 2.0f);
         float playerPosY = mainArea.getPosition().y + 24.0f;
 
         this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
@@ -95,10 +93,7 @@ namespace Draker {
         this->data_->window.draw(grid);
     }
 
-    void AreaOne::setPauseButtonLoc() {
-        // Define a margin from the edge.
-        const float margin = 10.0f;
-        
+    void AreaOne::setPauseButtonLoc() {        
         // Calculate the top left of the view.
         float viewLeft = player->getCamera().getCenter().x - (player->getCamera().getSize().x / 2);
         float viewTop = player->getCamera().getCenter().y - (player->getCamera().getSize().y / 2);
@@ -109,11 +104,11 @@ namespace Draker {
         // Update the pause button's position:
         // Place it at the top right with a margin, offset by its width.
         pauseButton_.setPosition(
-            viewRight - pauseButton_.getGlobalBounds().width - margin,
-            viewTop + margin
+            viewRight - pauseButton_.getGlobalBounds().width,
+            viewTop
         );
     }
-
+ 
     void AreaOne::changeArea() {
         sf::FloatRect playerBounds = player->getSprite().getGlobalBounds();
 

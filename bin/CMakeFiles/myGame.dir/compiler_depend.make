@@ -904,7 +904,7 @@ CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: ../src/AreaThreeState.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
-  ../src/AreaTwoState.hpp \
+  ../src/AreaThreeState.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
   /usr/include/SFML/System.hpp \
@@ -1081,7 +1081,7 @@ CMakeFiles/myGame.dir/src/AreaThreeState.cpp.o: ../src/AreaThreeState.cpp \
   ../src/GameState.hpp \
   ../src/PauseMenuState.hpp \
   ../src/AreaOneState.hpp \
-  ../src/AreaThreeState.hpp \
+  ../src/AreaTwoState.hpp \
   ../src/AreaFourState.hpp
 
 CMakeFiles/myGame.dir/src/AreaTwoState.cpp.o: ../src/AreaTwoState.cpp \

@@ -10,9 +10,9 @@ namespace Draker {
         sf::FloatRect playerBounds = player->getSprite().getGlobalBounds();
 
         float min_X = 0.0f;
-        float max_X = SCREEN_WIDTH - playerBounds.width;
+        float max_X = SCREEN_WIDTH - 0.75 * playerBounds.width;
         float min_Y = 0.0f;
-        float max_Y = SCREEN_HEIGHT - playerBounds.height;
+        float max_Y = SCREEN_HEIGHT - 0.75 * playerBounds.height;
 
         player->setPosition(sf::Vector2f(std::clamp(playerPosition.x, min_X, max_X),
                                          std::clamp(playerPosition.y, min_Y, max_Y - 8.0f)));

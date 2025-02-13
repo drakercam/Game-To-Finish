@@ -19,23 +19,23 @@ namespace Draker {
     void AreaFour::Init() {
         this->data_->assets.LoadTexture("Area Four Background", AREA_FOUR_BACKGROUND);
         this->data_->assets.LoadTexture("Pause Button", PAUSE_BUTTON);
-        this->data_->assets.LoadTexture("Player Sprite", PLAYER_SPRITE);
+        this->data_->assets.LoadTexture("Player Sprite Sheet", PLAYER_SPRITE_SHEET);
 
         this->background_.setTexture(this->data_->assets.GetTexture("Area Four Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
-        this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite"));
+        this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite Sheet"));
 
         createAreas();
 
         float playerPosX = mainArea.getPosition().x + 24.0f;
-        float playerPosY = mainArea.getPosition().y + (playerSprite_.getGlobalBounds().height);
+        float playerPosY = mainArea.getPosition().y + (playerSprite_.getGlobalBounds().height / 4.0f);
 
         this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
         this->borders = new GameBorders();
 
         pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
-        setPauseButtonLoc(); 
+        setPauseButtonLoc();
     }
 
     void AreaFour::HandleInput() {
@@ -95,10 +95,7 @@ namespace Draker {
         this->data_->window.draw(grid);
     }
 
-    void AreaFour::setPauseButtonLoc() {
-        // Define a margin from the edge.
-        const float margin = 10.0f;
-        
+    void AreaFour::setPauseButtonLoc() {        
         // Calculate the top left of the view.
         float viewLeft = player->getCamera().getCenter().x - (player->getCamera().getSize().x / 2);
         float viewTop = player->getCamera().getCenter().y - (player->getCamera().getSize().y / 2);
@@ -109,8 +106,8 @@ namespace Draker {
         // Update the pause button's position:
         // Place it at the top right with a margin, offset by its width.
         pauseButton_.setPosition(
-            viewRight - pauseButton_.getGlobalBounds().width - margin,
-            viewTop + margin
+            viewRight - pauseButton_.getGlobalBounds().width,
+            viewTop
         );
     }
 
@@ -134,7 +131,7 @@ namespace Draker {
 
         // create exit to main area proportional to where you entered
         mainArea = sf::RectangleShape((sf::Vector2f(horizontalWidth, horizontalHeight)));
-        mainArea.setPosition(horizontalX, 0.f);
+        mainArea.setPosition(horizontalX, 0.0f);
         mainArea.setFillColor(sf::Color::Green);
     }
 }
