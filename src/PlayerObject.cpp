@@ -1,7 +1,7 @@
 #include "PlayerObject.hpp"
 
 namespace Draker {
-    PlayerObject::PlayerObject(sf::Sprite sprite, float x, float y) : GameObject(sprite, x, y), 
+    PlayerObject::PlayerObject(sf::Sprite sprite, float x, float y) : 
     frameRect_(0, 0, 16, 16),
     playerBounds(sf::Vector2f(16.0f, 16.0f)) {
         Init(sprite, x, y);

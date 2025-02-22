@@ -26,6 +26,7 @@
 
 #define PLAYER_SPRITE "Resources/PLAYER.png"
 #define PLAYER_SPRITE_SHEET "Resources/PLAYER_SPRITE_SHEET.png"
+#define GOLD_SPRITE "Resources/GOLD.png"
 
 #define STATE_PLAYING 98
 #define STATE_PAUSED 97

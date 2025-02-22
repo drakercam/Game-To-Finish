@@ -12,16 +12,25 @@ namespace Draker {
     AreaOne::~AreaOne() {
         delete player;
         delete borders;
+        
+        for (int i = 0; i < collectibles; ++i) {
+            delete gold[i];
+        }
     }
 
     void AreaOne::Init() {
+        // for now init the number of collectibles to 30
+        collectibles = 30;
+
         this->data_->assets.LoadTexture("Area One Background", AREA_ONE_BACKGROUND);
         this->data_->assets.LoadTexture("Pause Button", PAUSE_BUTTON);
         this->data_->assets.LoadTexture("Player Sprite Sheet", PLAYER_SPRITE_SHEET);
+        this->data_->assets.LoadTexture("Gold Sprite", GOLD_SPRITE);
 
         this->background_.setTexture(this->data_->assets.GetTexture("Area One Background"));
         this->pauseButton_.setTexture(this->data_->assets.GetTexture("Pause Button"));
         this->playerSprite_.setTexture(this->data_->assets.GetTexture("Player Sprite Sheet"));
+        this->goldSprite_.setTexture(this->data_->assets.GetTexture("Gold Sprite"));
 
         createAreas();
 
@@ -30,6 +39,10 @@ namespace Draker {
 
         this->player = new PlayerObject(playerSprite_, playerPosX, playerPosY);
         this->borders = new GameBorders();
+
+        for (int i = 0; i < collectibles; ++i) {
+            this->gold.push_back(new CollectibleObject(this->goldSprite_));
+        }
 
         pauseButton_.setScale(sf::Vector2f(0.1f, 0.1f));
 
@@ -68,6 +81,10 @@ namespace Draker {
         DrawTileGrid();
 
         this->data_->window.draw(mainArea);
+
+        for (int i = 0; i < collectibles; ++i) {
+            gold[i]->Draw(this->data_->window);
+        }
 
         this->data_->window.draw(this->pauseButton_);
         this->player->Draw(this->data_->window);

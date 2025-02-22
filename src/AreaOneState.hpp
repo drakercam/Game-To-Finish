@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "PlayerObject.hpp"
+#include "CollectibleObject.hpp"
 #include "Game.hpp"
 #include "GameBorders.hpp"
 #include "GameState.hpp"
@@ -22,6 +23,8 @@ namespace Draker {
             void Update(float dt);
             void Draw(float dt);
 
+            int numCollectibles() { return collectibles; }
+
         private:
             GameDataRef data_;
 
@@ -31,8 +34,14 @@ namespace Draker {
 
             sf::Sprite playerSprite_;
 
+            sf::Sprite goldSprite_;
+
             PlayerObject* player;
             GameBorders* borders;
+            std::vector<CollectibleObject*> gold;
+            bool isDrawn_ = false;
+
+            int collectibles = 0;
 
             sf::RectangleShape mainArea;
 

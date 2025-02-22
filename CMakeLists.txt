@@ -26,6 +26,7 @@ set(SOURCES
     src/AreaThreeState.cpp
     src/AreaFourState.cpp
     src/GameBorders.cpp
+    src/CollectibleObject.cpp
 )
 
 set(HEADERS
@@ -46,6 +47,7 @@ set(HEADERS
     src/AreaThreeState.hpp
     src/AreaFourState.hpp
     src/GameBorders.hpp
+    src/CollectibleObject.hpp
 )
 
 # Create executable

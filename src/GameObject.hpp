@@ -10,7 +10,6 @@
 namespace Draker {
     class GameObject {
         public:
-            GameObject(sf::Sprite sprite, float x, float y);
             virtual void Init(sf::Sprite sprite, float x, float y) { }
             virtual void Update(float dt) { }
             virtual void Draw(sf::RenderWindow &window) { }
